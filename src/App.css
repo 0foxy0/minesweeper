@@ -1,0 +1,28 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.field {
+  position: relative;
+  border: 0.1px solid black;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.field-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.field-revealed {
+  background-color: rgb(190, 190, 190);
+}
